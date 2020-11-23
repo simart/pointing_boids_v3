@@ -70,7 +70,7 @@ class Vector {
   }
 
   float getMag() {
-    return (float) Math.sqrt(x*x + y*y);
+    return (float)( Math.sqrt(x*x + y*y));
   }
 
   void setMag(float s) {
