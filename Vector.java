@@ -99,8 +99,8 @@ class Vector {
   //static method randVec returns a Vector with x and y 
   //in range -1.0 to 0.999
   static Vector randVec() {
-    float vx_ = (float)(((int)(Math.random()*3)-1)*Math.random());
-    float vy_ = (float)(((int)(Math.random()*3)-1)*Math.random());
+    float vx_ = random(-1,1);//(float)(((int)(Math.random()*3)-1)*Math.random());
+    float vy_ = random(-1,1);//(float)(((int)(Math.random()*3)-1)*Math.random());
     Vector v_ = new Vector(vx_, vy_);
     return v_;
   }
@@ -108,8 +108,8 @@ class Vector {
   //static method randVec returns a Vector with x and y 
   //in range -1.0 to 0.999 scaled by arg
   static Vector randVec(float s_) {
-    float vx_ = (float)(((int)(Math.random()*3)-1)*Math.random());
-    float vy_ = (float)(((int)(Math.random()*3)-1)*Math.random());
+    float vx_ = random(-1,1);//(float)(((int)(Math.random()*3)-1)*Math.random());
+    float vy_ = random(-1,1);//(float)(((int)(Math.random()*3)-1)*Math.random());
     Vector v_ = new Vector(vx_, vy_);
     v_.setMag(s_);
     return v_;
