@@ -76,7 +76,7 @@ void showBoid(Boid bd_) {
     stroke(color(255, 0, 0));
     Vector accVector = Vector.mul(bd_.acceleration, Boid.ptSize*20);
     line(0, 0, (int)(accVector.x), (int)(accVector.y));
-    //println((int)(accVector.x) + ", " + (int)(accVector.y));
+    println((int)(accVector.x) + ", " + (int)(accVector.y));
     // rotate the Boid shape by the angle of the velocity vector
     rotate(bd_.location.angle(bd_.velocity));  
     // Draw the Boid with translated and rotated coordinates
